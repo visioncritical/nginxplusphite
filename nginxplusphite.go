@@ -60,7 +60,7 @@ func main() {
 func ToInt64(num json.Number) int64 {
   numInt, err := num.Int64()
   if err != nil {
-    log.Fatal("Error converting json.Number to int64")
+    log.Printf("Error converting json.Number to int64")
   }
   return numInt
 }
